@@ -1,204 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hamza Bukhari | Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahzad | Developer</title>
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Sidebar -->
-<div class="sidebar">
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav>
+    <h2 class="logo">Shahzad</h2>
 
-<div class="profile">
-<img src="images/profile.jpg">
-<h2>Hamza Bukhari</h2>
-<p>Web Developer</p>
-</div>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-<nav>
-<ul>
-<li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
-<li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-<li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
-<li><a href="#resume"><i class="fa fa-file"></i> Resume</a></li>
-<li><a href="#portfolio"><i class="fa fa-image"></i> Portfolio</a></li>
-<li><a href="#services"><i class="fa fa-briefcase"></i> Services</a></li>
-<li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
-</ul>
-</nav>
+    <div class="nav-icons">
+      <i class="fas fa-moon" id="themeToggle"></i>
+    </div>
+  </nav>
+</header>
 
-</div>
-
-<!-- Main Content -->
-<div class="main">
-
-<!-- Hero -->
+<!-- ===== HERO ===== -->
 <section id="home" class="hero">
-<h1>Hi, I'm Hamza</h1>
-<p>Full Stack Web Developer</p>
+  <h1>Hi, I'm <span>Shahzad</span></h1>
+  <h2 class="typing"></h2>
+
+  <div class="buttons">
+    <a href="#" class="btn">Download CV</a>
+    <a href="#contact" class="btn outline">Hire Me</a>
+  </div>
+
+  <div class="socials">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
 </section>
 
-
-<!-- About -->
-<section id="about">
-<h2>About Me</h2>
-
-<div class="about-container">
-
-<img src="images/pro.jpg">
-
-<div>
-
-<p>
-I am a passionate web developer focused on building modern,
-responsive and scalable web applications using modern
-technologies.
-</p>
-
-<ul>
-<li><b>Birthday:</b> 2002</li>
-<li><b>Email:</b> shahzad@email.com</li>
-<li><b>Phone:</b> +92 3191041904</li>
-<li><b>City:</b> Burewala</li>
-</ul>
-
-</div>
-</div>
-
+<!-- ===== ABOUT ===== -->
+<section id="about" class="hidden">
+  <h2>About Me</h2>
+  <p>I create modern, responsive, and animated web applications using latest technologies.</p>
 </section>
 
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="hidden">
+  <h2>Projects</h2>
 
-<!-- Skills -->
-<section id="skills">
+  <div class="projects-container">
+    <div class="card">
+      <h3>Task Manager</h3>
+      <p>Advanced task tracking app</p>
+    </div>
 
-<h2>Skills</h2>
+    <div class="card">
+      <h3>QR Scanner</h3>
+      <p>Scan QR codes using camera</p>
+    </div>
 
-<div class="skill">
-<p>HTML</p>
-<div class="bar"><span style="width:95%"></span></div>
-</div>
-
-<div class="skill">
-<p>CSS</p>
-<div class="bar"><span style="width:90%"></span></div>
-</div>
-
-<div class="skill">
-<p>JavaScript</p>
-<div class="bar"><span style="width:85%"></span></div>
-</div>
-
-<div class="skill">
-<p>Python</p>
-<div class="bar"><span style="width:80%"></span></div>
-</div>
-
+    <div class="card">
+      <h3>Portfolio</h3>
+      <p>Modern animated portfolio</p>
+    </div>
+  </div>
 </section>
 
-
-<!-- Resume -->
-<section id="resume">
-
-<h2>Resume</h2>
-
-<div class="resume-container">
-
-<div>
-<h3>Education</h3>
-<p>BS Computer Science</p>
-<p>University </p>
-</div>
-
-<div>
-<h3>Experience</h3>
-<p>Frontend Developer</p>
-<p>Worked on responsive web apps</p>
-</div>
-
-</div>
-
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="hidden">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
 </section>
-
-
-<!-- Portfolio -->
-<section id="portfolio">
-
-<h2>Portfolio</h2>
-
-<div class="portfolio-grid">
-
-<div class="project"></div>
-<div class="project"></div>
-<div class="project"></div>
-<div class="project"></div>
-<div class="project"></div>
-<div class="project"></div>
-
-</div>
-
-</section>
-
-
-<!-- Services -->
-<section id="services">
-
-<h2>Services</h2>
-
-<div class="services-container">
-
-<div class="service">
-<i class="fa fa-code"></i>
-<h3>Web Development</h3>
-<p>Modern responsive websites</p>
-</div>
-
-<div class="service">
-<i class="fa fa-mobile"></i>
-<h3>Responsive Design</h3>
-<p>Mobile friendly websites</p>
-</div>
-
-<div class="service">
-<i class="fa fa-server"></i>
-<h3>Backend Development</h3>
-<p>APIs and databases</p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- Contact -->
-<section id="contact">
-
-<h2>Contact</h2>
-
-<form>
-
-<input type="text" placeholder="Hamza">
-
-<input type="email" placeholder="sultan2y2zhrypq@gmail.com">
-
-<textarea placeholder="Message"></textarea>
-
-<button>Send Message</button>
-
-</form>
-
-</section>
-
-</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
